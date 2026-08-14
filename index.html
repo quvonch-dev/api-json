@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Product Shop</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="shop">
+
+    <!-- HEADER -->
+    <header class="header">
+
+      <h1>🛍️ Product Shop</h1>
+
+      <!-- SEARCH -->
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="🔎 Mahsulot qidirish...">
+      </div>
+
+      <!-- CART BUTTON -->
+      <button class="cart-btn" id="cartBtn">
+        🛒 Savat
+        <span id="cartCount">0</span>
+      </button>
+
+    </header>
+
+
+    <!-- PRODUCTS -->
+    <div class="container"></div>
+
+  </div>
+
+
+  <!-- CART MODAL -->
+  <div class="cart-modal" id="cartModal">
+
+    <div class="cart-content">
+
+      <div class="cart-header">
+
+        <h2>🛒 Mening savatim</h2>
+
+        <button id="closeCart">✕</button>
+
+      </div>
+
+
+      <div id="cartItems" class="cart-items">
+        <p class="empty-cart">
+          Savat bo‘sh
+        </p>
+      </div>
+
+
+      <div class="cart-footer">
+
+        <h3>
+          Jami:
+          <span id="cartTotal">$0</span>
+        </h3>
+
+        <button class="order-btn">
+          Buyurtma berish
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
